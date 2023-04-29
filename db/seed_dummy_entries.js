@@ -1,0 +1,22 @@
+const Entry = require("../models/entry")
+
+Entry.create({amount: 5000, type: 'revenue', category: 'salary', month: 'Jan', year: 2023 })
+Entry.create({amount: 2000, type: 'revenue', category: 'salary', month: 'Jan', year: 2023 })
+Entry.create({amount: 30, type: 'revenue', category: 'interest', month: 'Feb', year: 2023 })
+Entry.create({amount: 5000, type: 'revenue', category: 'salary', month: 'Feb', year: 2023 })
+Entry.create({amount: 2000, type: 'revenue', category: 'salary', month: 'Feb', year: 2023 })
+Entry.create({amount: 30, type: 'revenue', category: 'interest', month: 'Mar', year: 2023 })
+Entry.create({amount: 5000, type: 'revenue', category: 'salary', month: 'Mar', year: 2023 })
+Entry.create({amount: 2000, type: 'revenue', category: 'salary', month: 'Mar', year: 2023 })
+Entry.create({amount: 30, type: 'revenue', category: 'interest', month: 'Mar', year: 2023 })
+
+Entry.create({amount: 400, type: 'expense', category: 'utilities', month: 'Jan', year: 2023 })
+Entry.create({amount: 400, type: 'expense', category:'movies', month: 'Jan', year: 2023 })
+Entry.create({amount: 250, type: 'expense', category: 'shady stuffs', month: 'Jan', year: 2023 })
+Entry.create({amount: 400, type: 'expense', category: 'utilities', month: 'Feb', year: 2023 })
+Entry.create({amount: 400, type: 'expense', category:'movies', month: 'Feb', year: 2023 })
+Entry.create({amount: 250, type: 'expense', category: 'shady stuffs', month: 'Feb', year: 2023 })
+Entry.create({amount: 400, type: 'expense', category: 'eat out', month: 'Feb', year: 2023 })
+Entry.create({amount: 400, type: 'expense', category:'utilities', month: 'Mar', year: 2023 })
+Entry.create({amount: 250, type: 'expense', category: 'shady stuffs', month: 'Mar', year: 2023 })
+

@@ -1,17 +1,11 @@
-CREATE DATABASE pokequiz;
+CREATE DATABASE money_app;
 
-DROP TABLE IF EXISTS wordWallLeaderboard;
-DROP TABLE IF EXISTS triviaLeaderboard;
-
-
-CREATE TABLE wordWallLeaderboard (
+CREATE TABLE entry (
     id SERIAL PRIMARY KEY,
-    username TEXT NOT NULL,
-    score INTEGER NOT NULL
+    amount NUMERIC NOT NULL,
+    category TEXT NOT NULL,
+    type TEXT NOT NULL,
+    month TEXT NOT NULL,
+    year TEXT NOT NULL
 );
 
-CREATE TABLE triviaLeaderboard (
-    id SERIAL PRIMARY KEY,
-    username TEXT NOT NULL,
-    score INTEGER NOT NULL
-);

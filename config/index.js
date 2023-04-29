@@ -9,14 +9,15 @@ if (missing.length > 0) {
 }
 
 const deployment = {
-  prod: {
-    connectionString:
-      "postgres://pokequiz_user:hq0k9ErHGq2gL1fbbRi1sWBiWQTSwbmX@dpg-ch2uevt269v61ffhh5dg-a/pokequiz",
-  },
+  // prod: {
+  //   connectionString:
+  //     "postgres://pokequiz_user:hq0k9ErHGq2gL1fbbRi1sWBiWQTSwbmX@dpg-ch2uevt269v61ffhh5dg-a/pokequiz",
+  // },
   dev: {
     connectionString: process.env.DATABASE_URL,
   },
 }
+
 let link
 if (!process.env.DATABASE_URL) {
   link = deployment.prod
