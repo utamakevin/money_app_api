@@ -30,7 +30,7 @@ class Entry {
   }
 
   static findRevenueMonths() {
-    return db.query(`select distinct month from entry where type = 'expense';`)
+    return db.query(`select distinct month from entry where type = 'revenue';`)
   }
   
   static findExpenseMonths() {
